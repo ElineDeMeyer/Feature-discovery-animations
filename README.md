@@ -6,9 +6,7 @@ Since May Google has updated his Material Design website. I have seen an interes
 
 #Android support
 
-This sample has been made for Android 5+, I don't plan to support old version. But you can use this sample and check these lib to create these animation for Android 4 :
-* [CircularReveal](https://github.com/ozodrukh/CircularReveal)
-* [ViewRevealAnimator](https://github.com/sephiroth74/ViewRevealAnimator)
+This sample has been made for Android 4.1+. To make it work for devices below Android 5 I had to disable hardware Acceleration. That's why in the Manifest you will find android:hardwareAccelerated="@bool/isBelowLollipop", with values and values-v21 we are able to set trur to "hardwareAccelerated" depending of Android API.
 
 # Issues and Pull requests
 
