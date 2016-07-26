@@ -5,16 +5,28 @@
     android:id="@+id/content_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.lucienguimaraes.feature_discovery_animations.MainActivity"
+    tools:context=".MainActivity"
     tools:showIn="@layout/app_bar_main">
 
-    <TextView
+    <Button
+        android:text="@string/content_main_show"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="@+id/content_main"
+        android:id="@+id/button_show_animation"
         app:layout_constraintLeft_toLeftOf="@+id/content_main"
-        app:layout_constraintRight_toRightOf="@+id/content_main"
-        app:layout_constraintTop_toTopOf="@+id/content_main" />
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/content_main"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="@color/colorPrimary"/>
 
+    <Button
+        android:text="@string/content_main_hide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_hide_animation"
+        app:layout_constraintRight_toRightOf="@+id/content_main"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/content_main"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="@color/colorPrimary" />
 </android.support.constraint.ConstraintLayout>
